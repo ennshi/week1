@@ -6,7 +6,7 @@
   btn.addEventListener('click', async () => {
     const url = inp.value;
     const res = await fetch(url);
-    const text = res.text();
+    const text = await res.text();
     inp.value = text;
   });
 </script>
