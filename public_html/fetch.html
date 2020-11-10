@@ -3,10 +3,10 @@
 <script>
   const btn = document.getElementById('bt');
   const inp = document.getElementById('inp');
-  btn.addEventListener('click', async () => {
-    const url = inp.value;
-    const res = await fetch(url);
+  async function onClick() {
+    const res = await fetch(inp.value);
     const text = await res.text();
     inp.value = text;
-  });
+  }
+  btn.addEventListener('click', onClick);
 </script>
