@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <body>
-    <input type="text" id="inp" />
-    <button id="bt">Fetch</button>
-    <script>
-      const btn = document.getElementById('bt');
-      const inp = document.getElementById('inp');
-      btn.addEventListener('click', async () => {
-        const url = inp.value;
-        const res = await fetch(url);
-        const text = await res.text();
-        inp.value = text;
-      });
-    </script>
-  </body>
-</html>
+<input type="text" id="inp" />
+<button id="bt" type="button">Fetch</button>
+<script>
+  const btn = document.getElementById('bt');
+  const inp = document.getElementById('inp');
+  btn.addEventListener('click', async () => {
+    const url = inp.value;
+    const res = await fetch(url);
+    const text = await res.text();
+    inp.value = text;
+  });
+</script>
