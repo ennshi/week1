@@ -23,6 +23,7 @@
       "Access-Control-Allow-Origin": "*"
     },
     "/fetch/": {
+      "Content-Type": "text/html",
       "Access-Control-Allow-Origin": "*"
     }
   }
